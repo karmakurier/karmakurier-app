@@ -1,0 +1,24 @@
+@import 'src/styles/colors.scss';
+
+.Dashboard {
+    background-color: $papaya;
+    min-height: 100%;
+}
+
+.headline {
+    text-align: center;
+    color: $white;
+    padding-top: 1.5625em;
+    padding-bottom: 1.5625em;
+    margin: 0;
+    font-size: 1.875em;
+    font-weight: 500;
+}
+
+.main-backdrop {
+    border-radius: 0.9375em 0.9375em 0px 0px;
+    background-color: $main1_1;
+    padding-top: 2.4375em;
+    padding-left: 2.4375em;
+    padding-right: 2.4375em;
+}

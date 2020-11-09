@@ -1,0 +1,22 @@
+@import 'src/styles/colors.scss';
+
+.bottombar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.Mui-selected {
+    .MuiBottomNavigationAction-wrapper {
+        svg {
+            path {
+                fill: #FF966E;
+            }
+        }
+
+        .MuiBottomNavigationAction-label {
+            color: $primary;
+            font-size: 0.75rem;
+        }
+    }
+}

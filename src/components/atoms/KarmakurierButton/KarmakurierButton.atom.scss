@@ -1,0 +1,102 @@
+@import 'src/styles/fonts.scss';
+@import 'src/styles/colors';
+
+.buttonclass {
+    Button {
+        font-family: 'Quicksand', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow: none;
+        text-transform: lowercase;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 1em;
+        height: 2.25em;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    Button:hover {
+        box-shadow: none;
+    }
+}
+
+.btnNormal {
+    Button {
+        border-radius: 1.875em;
+    }
+}
+
+.btnFull {
+    width: 100%;
+
+    Button {
+        border-radius: 0.375em;
+    }
+}
+
+.primary {
+    Button {
+        background-color: $main4_3;
+        border-color: $main4_3;
+        color: $font_light;
+    }
+
+    Button:hover {
+        background-color: $main4_3;
+        border-color: $main4_3;
+    }
+}
+
+.secondary {
+    Button {
+        background-color: $main1_3;
+        border-color: $main1_3;
+        color: $font_light;
+    }
+
+    Button:hover {
+        background-color: $main1_3;
+        border-color: $main1_3;
+    }
+}
+
+.prominent {
+    Button {
+        background-color: $main2_3;
+        border-color: $main2_3;
+        color: $font_light;
+    }
+
+    Button:hover {
+        background-color: $main2_3;
+        border-color: $main2_3;
+    }
+}
+
+.decent {
+    Button {
+        background-color: transparent;
+        border-color: $font_light;
+        color: $font_light;
+    }
+
+    Button:hover {
+        background-color: transparent;
+        border-color: $font_light;
+    }
+}
+
+.outlined {
+    Button {
+        border-color: $main2_3;
+        color: $main2_3;
+    }
+
+    Button:hover {
+        border-color: $main2_3;
+        color: $main2_3;
+    }
+}

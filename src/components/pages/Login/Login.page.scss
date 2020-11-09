@@ -1,0 +1,121 @@
+@import 'src/styles/colors.scss';
+
+.LoginPage {
+  width: 100%;
+}
+
+.page-header {
+    background-position: top;
+    background-size: 100%;
+}
+
+.headline {
+  text-align: center;
+  color: $white;
+  padding-top: 1.5625em;
+  padding-bottom: 1.5625em;
+  margin: 0;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+.intro-image {
+  width: 100%;
+
+  svg {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.text-input {
+  background: $input_color;
+  border: 1px solid $papaya;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  color: $font_black;
+  letter-spacing: 0.571429px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  margin-top: 10px;
+  display: block;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $font_black;
+  opacity: 1; /* Firefox */
+}
+
+.input-form-first {
+  margin-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100% - 30px);
+}
+
+.input-form {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: calc(100% - 30px);
+}
+
+.pw-forgot {
+  width: 100%;
+  text-align: right;
+  a {
+    color: $papaya;
+    text-decoration: none;
+  }
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.white-container-content {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white-container {
+  padding-top: 10px;
+  width: calc(100%);
+  background-color: $white;
+  
+}
+
+.login-button-container {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.388889px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-login {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.4375px;
+  color: $font_black;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+@import 'src/styles/colors.scss';
+
+.card {
+    width: 100%;
+    border-radius: 0.9375em;
+    background-color: $white;
+    box-shadow: 0px 4px 4px rgba(255, 150, 110, 0.25);
+
+    .card-image {
+        border-radius: 0.9375em;
+        padding-left: 0.5625em;
+        padding-right: 0.5625em;
+        padding-bottom: 1.5625em;
+        background-color: $main4_3;
+        padding-top: 1.5625em;
+
+        svg {
+            display: block;
+            margin: auto;
+        }
+    }
+    .card-content {
+        padding: 1.25em;
+
+        .card-content-headline {
+            font-size: 1.375em;
+            text-align: center;
+        }
+        .card-content-subheadline {
+            font-size: 0.875em;
+            text-align: center;
+            color: $font_grey;
+        }
+    }
+}

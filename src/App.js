@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import './App.scss'
+import slugify from 'slugify'
+import { routes, protectedRoutes } from './router'
+import ProtectedRoute from './components/ProtectedRoute'
+import UserContext from './services/user.context'
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState({
+    isLoggedIn: false,
+    user: null,
+  })
+
+  const changeLoginState = (loginState) => {
+    setUser({ isLoggedIn: loginState })
+  }
+
+  const [funcs] = useState({
+    changeLoginState,
+  })
+
+  // Define global states
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UserContext.Provider value={{ user, funcs }}>
+      <Router>
+        <Switch>
+          {routes.map((route) => (
+            <Route key={slugify(route.path)} path={route.path} exact={route.exact}>
+              <route.main />
+            </Route>
+          ))}
+          {protectedRoutes.map((route) => (
+            <ProtectedRoute key={slugify(route.path)} path={route.path} exact={route.exact} />
+          ))}
+        </Switch>
+      </Router>
+    </UserContext.Provider>
+  )
 }
 
-export default App;
+export default App

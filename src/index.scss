@@ -1,0 +1,25 @@
+// modules
+@import 'styles/fonts.scss';
+@import 'styles/colors';
+
+html,
+body,
+.root {
+  width: 100%;
+  min-width: 420px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: $font_black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
